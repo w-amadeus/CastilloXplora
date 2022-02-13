@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable/button_bg.xml" value="0.2703125" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable/edit_text_bg.xml" value="0.2703125" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable/location_btn.xml" value="0.2703125" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable/vie_bg.xml" value="0.1962962962962963" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/about_us_fragment.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_dash.xml" value="0.264" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_list.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_maps.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_pdv.xml" value="0.19429347826086957" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_pdvactivity.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/content_drawer.xml" value="0.25" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/drawer_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/fragment_blank.xml" value="0.15625" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/fragment_list.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/fragment_simple_p_d_v.xml" value="0.264" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/header.xml" value="0.264" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/home_fragment.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/item_option.xml" value="0.1" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/login_tab_fragment.xml" value="0.264" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/my_action_bar.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/my_card_view.xml" value="0.264" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/pdv_card_view.xml" value="0.23369565217391305" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/pdv_fragment.xml" value="0.4" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/signup_tab_fragment.xml" value="0.1403985507246377" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/singup_tab_fragment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/supp_fragment.xml" value="0.13072916666666667" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/table_card_view.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
