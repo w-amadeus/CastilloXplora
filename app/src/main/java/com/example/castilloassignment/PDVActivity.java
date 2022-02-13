@@ -1,12 +1,15 @@
 package com.example.castilloassignment;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -77,6 +80,9 @@ public class PDVActivity extends AppCompatActivity {
                     requestPermissions(permissions, 80);
                 }
 
+                Intent intentPhoto = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intentPhoto, 101);
+
             }
         });
 
@@ -96,6 +102,17 @@ public class PDVActivity extends AppCompatActivity {
 
                 Toast.makeText(this, "No", Toast.LENGTH_LONG).show();
             }
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == 101){
+
+            Bitmap bitmap = (Bitmap) data.getExtras().get("data");
+            ibPhoto.setImageBitmap(bitmap);
         }
     }
 }
