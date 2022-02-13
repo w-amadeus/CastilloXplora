@@ -25,9 +25,12 @@ public class DashActivity extends AppCompatActivity implements DrawerAdapter.OnI
 
     private static final int POS_CLOSE = 0;
     private static final int POS_HOME = 1;
-    private static final int POS_PDV = 2;
-    private static final int POS_SUPPORT = 3;
-    private static final int POS_LOGOUT = 5;
+    private static final int POS_PROFILE  = 2;
+    private static final int POS_PDV = 3;
+    private static final int POS_SUPPORT = 4;
+    private static final int POS_SETTINGS = 5;
+    private static final int POS_ABOUT = 6;
+    private static final int POS_LOGOUT = 8;
 
     private String[] screenTitles;
     private Drawable[] screenIcons;
@@ -42,6 +45,9 @@ public class DashActivity extends AppCompatActivity implements DrawerAdapter.OnI
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.my_arrow);;
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         slidingRootNav = new SlidingRootNavBuilder(this)
                 .withDragDistance(180)
@@ -60,9 +66,12 @@ public class DashActivity extends AppCompatActivity implements DrawerAdapter.OnI
         DrawerAdapter adapter = new DrawerAdapter(Arrays.asList(
                 createItemFor(POS_CLOSE),
                 createItemFor(POS_HOME).setChecked(true),
+                createItemFor(POS_PROFILE),
                 createItemFor(POS_PDV),
                 createItemFor(POS_SUPPORT),
-                new SpaceItem(260),
+                createItemFor(POS_SETTINGS),
+                createItemFor(POS_ABOUT),
+                new SpaceItem(200),
                 createItemFor(POS_LOGOUT)
         ));
         adapter.setListener(this);
@@ -119,14 +128,27 @@ public class DashActivity extends AppCompatActivity implements DrawerAdapter.OnI
             transaction.replace(R.id.container, homeFragment);
         }
 
+        else if (position == POS_PROFILE){
+            HomeFragment homeFragment = new HomeFragment();
+            transaction.replace(R.id.container, homeFragment);
+        }
+
         else if (position == POS_PDV){
             PDVFragment pdvFragment= new PDVFragment();
             transaction.replace(R.id.container, pdvFragment);
         }
 
         else if (position == POS_SUPPORT){
-            SuppFragment suppFragment = new SuppFragment();
-            transaction.replace(R.id.container, suppFragment);
+            HomeFragment homeFragment = new HomeFragment();
+            transaction.replace(R.id.container, homeFragment);
+        }
+        else if (position == POS_SETTINGS){
+            HomeFragment homeFragment = new HomeFragment();
+            transaction.replace(R.id.container, homeFragment);
+        }
+        else if (position == POS_ABOUT){
+            HomeFragment homeFragment = new HomeFragment();
+            transaction.replace(R.id.container, homeFragment);
         }
 
         else if (position == POS_LOGOUT){

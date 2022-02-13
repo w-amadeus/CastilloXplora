@@ -3,6 +3,7 @@ package com.example.castilloassignment;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -39,6 +40,12 @@ public class PDVActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdv);
+
+        Toolbar myActionBar = (Toolbar) findViewById(R.id.myActionBar);
+        setSupportActionBar(myActionBar);
+
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.my_arrow);;
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         tvName = (TextView) findViewById(R.id.tvName);
         tvLocation = (TextView) findViewById(R.id.tvLocation);

@@ -27,6 +27,7 @@
     <string name="alert_message">¿Atenderá el Punto de Venta?</string>
     <string name="alert_yes">Sí</string>
     <string name="alert_no">No</string>
+    <string name="title_app">Xplora</string>
 
 
 </resources>

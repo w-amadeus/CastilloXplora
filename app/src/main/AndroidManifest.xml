@@ -14,16 +14,18 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/title_app"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CastilloAssignment">
         <activity
             android:name=".ListActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".PDVActivity"/>
         <activity
             android:name=".PDVActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".DashActivity"/>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -39,7 +41,8 @@
         <activity
             android:name=".MapsActivity"
             android:exported="false"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/title_activity_maps"
+            android:parentActivityName=".DashActivity"/>
         <activity
             android:name=".DashActivity"
             android:exported="false" />

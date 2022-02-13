@@ -1,6 +1,7 @@
 package com.example.castilloassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -23,6 +24,13 @@ public class ListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+
+        Toolbar myActionBar = (Toolbar) findViewById(R.id.myActionBar);
+        setSupportActionBar(myActionBar);
+
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.my_arrow);;
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         rvLista = findViewById(R.id.rvLista);
         

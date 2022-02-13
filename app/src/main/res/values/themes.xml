@@ -10,19 +10,19 @@
         <item name="colorSecondaryVariant">@color/blue_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/pink_200</item>
         <!-- Customize your theme here. -->
     </style>
 
     <style name="Theme.CastilloAssignment.NoActionBar">
-        <item name="windowActionBar">false</item>
+        <item name="windowActionBar">true</item>
         <item name="windowNoTitle">true</item>
     </style>
 
     <style name="ToolBarStyle" parent="Theme.AppCompat">
-        <item name="android:textColorPrimary">@color/pink</item>
-        <item name="android:textColorSecondary">@color/pink</item>
-        <item name="actionMenuTextColor">@color/pink</item>
+        <item name="android:textColorPrimary">@color/pink_200</item>
+        <item name="android:textColorSecondary">@color/pink_200</item>
+        <item name="actionMenuTextColor">@color/black</item>
     </style>
 
     <style name="Theme.CastilloAssignment.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />

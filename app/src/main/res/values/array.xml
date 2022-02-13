@@ -5,18 +5,24 @@
 
         <item></item>
         <item>Inicio</item>
+        <item>Mi perfil</item>
         <item>Puntos de Venta</item>
         <item>Soporte</item>
+        <item>Ajustes</item>
+        <item>Acerca de</item>
         <item/>
-        <item>Log out </item>
+        <item>Cerrar Sesión </item>
     </string-array>
 
     <array name="id_activityScreenIcons">
 
         <item>@drawable/close_icon</item>
         <item>@drawable/home_icon</item>
+        <item>@drawable/profile_icon</item>
         <item>@drawable/shp_icon</item>
         <item>@drawable/support_icon</item>
+        <item>@drawable/setting_icon</item>
+        <item>@drawable/about_icon</item>
         <item>0</item>
         <item>@drawable/logout_icon</item>
 
