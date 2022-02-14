@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable-small-200dpi/card_edge.xml" value="0.202734375" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable/about_icon.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable/button_bg.xml" value="0.2703125" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable/card_edge.xml" value="0.109765625" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable/close_icon.xml" value="0.2703125" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable/edit_text_bg.xml" value="0.2703125" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/drawable/location_btn.xml" value="0.2703125" />
@@ -21,7 +23,7 @@
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_maps.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_pdv.xml" value="0.264" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_pdv.xml" value="0.12" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/activity_pdvactivity.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/content_drawer.xml" value="0.25" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/drawer_menu.xml" value="0.25416666666666665" />
@@ -34,7 +36,7 @@
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/item_option.xml" value="0.1" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/login_tab_fragment.xml" value="0.264" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/my_action_bar.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/my_card_view.xml" value="0.264" />
+        <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/my_card_view.xml" value="0.4" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/pdv_card_view.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/pdv_fragment.xml" value="0.4" />
         <entry key="..\:/Users/jeanp/AndroidStudioProjects/CastilloAssignment/app/src/main/res/layout/signup_tab_fragment.xml" value="0.1403985507246377" />

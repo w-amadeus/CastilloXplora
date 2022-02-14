@@ -41,9 +41,9 @@
 
         <com.mikhaellopez.circularimageview.CircularImageView
             android:id="@+id/icPhoto"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="@dimen/margin_bottom"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_marginTop="20dp"
             android:src="@drawable/photo_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +57,8 @@
             android:src="@drawable/camera_icon"
             app:layout_constraintBottom_toTopOf="@+id/btnVisit"
             app:layout_constraintEnd_toEndOf="@+id/icPhoto"
-            app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+            app:layout_constraintTop_toBottomOf="@+id/tvLocation"
+            />
 
         <Button
             android:id="@+id/btnVisit"
