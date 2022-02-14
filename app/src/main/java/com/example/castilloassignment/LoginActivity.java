@@ -1,8 +1,12 @@
 package com.example.castilloassignment;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import com.example.castilloassignment.db.ConstructorUsuarios;
@@ -15,6 +19,7 @@ public class LoginActivity extends AppCompatActivity {
     ViewPager viewPager;
     FloatingActionButton btnFb, btnGoogle, btnTwitter;
     float v;
+    private final  static  int REQUEST_CODE = 120;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +57,31 @@ public class LoginActivity extends AppCompatActivity {
         btnTwitter.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(800).start();
         tabLayout.animate().translationY(0).alpha(1).setDuration(1000).setStartDelay(100).start();
 
+        verifyPermissions();
+
+
+    }
+
+    private void verifyPermissions(){
+
+        String[] permisions = {Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
+
+        if(ContextCompat.checkSelfPermission(this,
+                permisions[0]) == PackageManager.PERMISSION_GRANTED &&
+                ContextCompat.checkSelfPermission(this,
+                        permisions[1]) == PackageManager.PERMISSION_GRANTED &&
+                ContextCompat.checkSelfPermission(this,
+                        permisions[2]) == PackageManager.PERMISSION_GRANTED
+        )
+        {
+
+        }
+
+        else{
+
+            ActivityCompat.requestPermissions(this, permisions, REQUEST_CODE);
+
+        }
 
     }
 }

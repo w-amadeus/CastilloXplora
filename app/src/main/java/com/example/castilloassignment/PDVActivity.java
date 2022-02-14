@@ -18,6 +18,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class PDVActivity extends AppCompatActivity {
 
     String[] permissions = {"android.permission.CAMERA"};
@@ -26,7 +28,9 @@ public class PDVActivity extends AppCompatActivity {
     TextView tvLocation;
 
     Button btnVisit;
-    ImageButton ibPhoto;
+    FloatingActionButton fButton;
+
+    ImageView icPhoto;
 
     ImageView ivPDV;
 
@@ -51,8 +55,9 @@ public class PDVActivity extends AppCompatActivity {
         tvLocation = (TextView) findViewById(R.id.tvLocation);
 
         btnVisit = (Button) findViewById(R.id.btnVisit);
-        ibPhoto = (ImageButton) findViewById(R.id.ibPhoto);
+        fButton = (FloatingActionButton) findViewById(R.id.fButton);
 
+        icPhoto = (ImageView) findViewById(R.id.icPhoto);
         ivPDV = (ImageView) findViewById(R.id.ivPDV);
 
         Intent intent = getIntent();
@@ -78,14 +83,9 @@ public class PDVActivity extends AppCompatActivity {
             }
         });
 
-        ibPhoto.setOnClickListener(new View.OnClickListener() {
+        fButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
-                {
-                    requestPermissions(permissions, 80);
-                }
 
                 Intent intentPhoto = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(intentPhoto, 101);
@@ -95,22 +95,6 @@ public class PDVActivity extends AppCompatActivity {
 
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        if(requestCode == 80){
-
-            if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
-
-                Toast.makeText(this, "Si", Toast.LENGTH_LONG).show();
-            }
-            else {
-
-                Toast.makeText(this, "No", Toast.LENGTH_LONG).show();
-            }
-        }
-    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -119,7 +103,7 @@ public class PDVActivity extends AppCompatActivity {
         if(requestCode == 101){
 
             Bitmap bitmap = (Bitmap) data.getExtras().get("data");
-            ibPhoto.setImageBitmap(bitmap);
+            icPhoto.setImageBitmap(bitmap);
         }
     }
 }
