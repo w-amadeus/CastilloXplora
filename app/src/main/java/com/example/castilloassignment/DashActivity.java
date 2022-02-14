@@ -152,7 +152,9 @@ public class DashActivity extends AppCompatActivity implements DrawerAdapter.OnI
         }
 
         else if (position == POS_LOGOUT){
-            finish();
+
+            SessionManager sessionManager = new SessionManager(this);
+            sessionManager.logoutUser();
         }
 
         slidingRootNav.closeMenu();

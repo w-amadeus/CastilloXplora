@@ -44,30 +44,10 @@ public class SessionManager {
         editor.putString(KEY_NAME, name);
         // Storing email in pref
         editor.putString(KEY_EMAIL, email);
+        //Storing photo in pref
         editor.putString(KEY_PHOTO, photo);
         // commit changes
         editor.commit();
-    }
-
-    /**
-     * Check login method wil check user login status If false it will redirect
-     * user to login page Else won't do anything
-     */
-    public void checkLogin() {
-        // Check login status
-        if (!this.isLoggedIn()) {
-            // user is not logged in redirect him to Login Activity
-            Intent i = new Intent(_context, LoginActivity.class);
-            // Closing all the Activities
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-
-            // Add new Flag to start new Activity
-            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-
-            // Staring Login Activity
-            _context.startActivity(i);
-        }
-
     }
 
     /**
@@ -82,6 +62,7 @@ public class SessionManager {
 
         user.put(KEY_EMAIL, sharedPreferences.getString(KEY_EMAIL, null));
 
+        //user photo id
         user.put(KEY_PHOTO, sharedPreferences.getString(KEY_PHOTO, null));
 
         // return user
@@ -108,11 +89,4 @@ public class SessionManager {
         _context.startActivity(i);
     }
 
-    /**
-     * Quick check for login
-     **/
-    // Get Login State
-    public boolean isLoggedIn() {
-        return sharedPreferences.getBoolean(IS_LOGIN, false);
-    }
 }
