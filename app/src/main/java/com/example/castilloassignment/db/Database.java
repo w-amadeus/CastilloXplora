@@ -165,6 +165,8 @@ public class Database extends SQLiteOpenHelper {
             usuarioActual.setPassword(registrosUsuarios.getString(3));
             usuarioActual.setFoto(registrosUsuarios.getInt(4));
 
+            usuarios.add(usuarioActual);
+
         }
 
         sqLiteDatabase.close();

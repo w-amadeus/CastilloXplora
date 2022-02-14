@@ -26,6 +26,7 @@ public class PDVFragment extends Fragment implements IPDVFragmentView {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.pdv_fragment, container, false);
+        getActivity().setTitle(R.string.punto_venta);
 
         recyclerView = root.findViewById(R.id.rvPdvs);
 

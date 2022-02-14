@@ -11,6 +11,7 @@ public class SuppFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.supp_fragment, container, false);
+        getActivity().setTitle(R.string.supp_frag);
 
         return root;
     }

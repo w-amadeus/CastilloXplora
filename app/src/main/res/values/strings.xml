@@ -28,6 +28,12 @@
     <string name="alert_yes">Sí</string>
     <string name="alert_no">No</string>
     <string name="title_app">Xplora</string>
+    <string name="punto_venta">Puntos de Venta</string>
+    <string name="home_frag">Inicio</string>
+    <string name="lis_frag">Reporte</string>
+    <string name="pdv_frag">Visita</string>
+    <string name="supp_frag">Soporte</string>
+    <string name="profile_frag">Mi Perfil</string>
 
 
 </resources>

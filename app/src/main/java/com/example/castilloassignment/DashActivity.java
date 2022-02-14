@@ -129,8 +129,8 @@ public class DashActivity extends AppCompatActivity implements DrawerAdapter.OnI
         }
 
         else if (position == POS_PROFILE){
-            HomeFragment homeFragment = new HomeFragment();
-            transaction.replace(R.id.container, homeFragment);
+            ProfileFragment profileFragment = new ProfileFragment();
+            transaction.replace(R.id.container, profileFragment);
         }
 
         else if (position == POS_PDV){

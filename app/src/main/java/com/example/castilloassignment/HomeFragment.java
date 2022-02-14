@@ -13,6 +13,7 @@ public class HomeFragment extends Fragment  {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         ViewGroup root = (ViewGroup) inflater.inflate(R.layout.home_fragment, container, false);
+        getActivity().setTitle(R.string.title_app);
 
 
 

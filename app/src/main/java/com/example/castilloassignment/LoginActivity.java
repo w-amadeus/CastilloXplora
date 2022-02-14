@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
 
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
 
+
         btnFb.setTranslationY(300);
         btnGoogle.setTranslationY(300);
         btnTwitter.setTranslationY(300);

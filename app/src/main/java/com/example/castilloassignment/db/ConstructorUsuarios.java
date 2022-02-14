@@ -41,7 +41,7 @@ public class ConstructorUsuarios {
         contentValues.put(DBConstants.TABLE_USUARIO_NAME, usuario.getName());
         contentValues.put(DBConstants.TABLE_USUARIO_EMAIL, usuario.getEmail());
         contentValues.put(DBConstants.TABLE_USUARIO_PASSWORD, usuario.getPassword());
-        contentValues.put(DBConstants.TABLE_USUARIO_PHOTO, usuario.getFoto());
+        contentValues.put(DBConstants.TABLE_USUARIO_PHOTO, R.drawable.salieri);
         database.insertarUsuario(contentValues);
     }
 }

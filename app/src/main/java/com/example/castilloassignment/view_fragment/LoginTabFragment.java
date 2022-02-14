@@ -14,14 +14,19 @@ import androidx.fragment.app.Fragment;
 import com.example.castilloassignment.DashActivity;
 import com.example.castilloassignment.InputsValidation;
 import com.example.castilloassignment.R;
+import com.example.castilloassignment.SessionManager;
+import com.example.castilloassignment.db.ConstructorUsuarios;
 import com.example.castilloassignment.db.Database;
+import com.example.castilloassignment.pojo.Usuario;
+
+import java.util.ArrayList;
 
 public class LoginTabFragment extends Fragment {
 
     EditText edtEmail, edtPass;
     Button button;
     float v;
-    String email, password;
+    String email, password, name, foto;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -49,8 +54,13 @@ public class LoginTabFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 email       = edtEmail.getText().toString().trim();
-                password    = edtPass.getText().toString();
+                password    = edtPass.getText().toString().trim();
+
                 verifyFromSQLite();
+                userData();
+
+
+
             }
         });
 
@@ -74,8 +84,8 @@ public class LoginTabFragment extends Fragment {
                     return;
                 }
                 if (database.checkUser(email,password)) {
+
                     Intent dashIntent = new Intent(getContext(), DashActivity.class);
-                    dashIntent.putExtra("EMAIL", email);
                     emptyInputEditText();
                     startActivity(dashIntent);
                 } else {
@@ -89,6 +99,27 @@ public class LoginTabFragment extends Fragment {
     private void emptyInputEditText() {
         edtEmail.setText(null);
         edtPass.setText(null);
+    }
+
+    private  void userData(){
+
+        ConstructorUsuarios constructorUsuarios = new ConstructorUsuarios(getContext());
+        ArrayList<Usuario> usuarios = constructorUsuarios.obtenerDatos();
+
+        for(Usuario usuario:usuarios){
+
+            if(email.equals(usuario.getEmail())){
+
+                name = usuario.getName();
+                foto = String.valueOf(usuario.getFoto());
+
+            }
+
+
+        }
+
+        SessionManager sessionManager = new SessionManager(getContext());
+        sessionManager.createLoginSession(name, email, foto);
     }
 
 
