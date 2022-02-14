@@ -72,6 +72,8 @@ public class PDVActivity extends AppCompatActivity {
 
         ivPDV.setImageResource(logo);
 
+        btnVisit.setVisibility(View.GONE);
+
         btnVisit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,6 +84,8 @@ public class PDVActivity extends AppCompatActivity {
 
             }
         });
+
+
 
         fButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -104,6 +108,9 @@ public class PDVActivity extends AppCompatActivity {
 
             Bitmap bitmap = (Bitmap) data.getExtras().get("data");
             icPhoto.setImageBitmap(bitmap);
+            btnVisit.setVisibility(View.VISIBLE);
+
         }
+
     }
 }

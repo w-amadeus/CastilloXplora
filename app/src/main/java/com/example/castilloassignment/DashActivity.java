@@ -116,7 +116,7 @@ public class DashActivity extends AppCompatActivity implements DrawerAdapter.OnI
 
     @Override
     public void onBackPressed() {
-        finish();
+        moveTaskToBack(true);
     }
 
     @Override
@@ -161,5 +161,6 @@ public class DashActivity extends AppCompatActivity implements DrawerAdapter.OnI
         transaction.addToBackStack(null);
         transaction.commit();
     }
+
 
 }

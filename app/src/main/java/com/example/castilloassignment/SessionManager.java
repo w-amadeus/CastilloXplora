@@ -23,6 +23,7 @@ public class SessionManager {
     public static final String KEY_NAME = "name";
     // Email address (make variable public to access from outside)
     public static final String KEY_EMAIL = "email";
+    // User photo (make variable public to access from outside)
     public static final String KEY_PHOTO = "foto";
 
 
